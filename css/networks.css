@@ -6,8 +6,6 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-
-    transition: 200ms transform linear;
 }
 
 .networks a, .networks i{
@@ -39,6 +37,7 @@
         justify-content: center;
 
         transform: translateX(-100%);
+        transition: 200ms transform linear;
     }
 
     .networks a{

@@ -1,4 +1,4 @@
-.mainHeader>nav{
+.mainNav{
     background-color: white;
 
     padding: 20px 2.5%;
@@ -8,11 +8,9 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
-    transition: 200ms transform linear;
 }
 
-.mainHeader>nav>a ,.mainHeader>nav>button{
+.mainNav>a ,.mainNav>button{
     width: fit-content;
 
     color: var(--main-dark-blue);
@@ -20,15 +18,15 @@
     transition: 200ms color ease-in-out;
 }
 
-.mainHeader>nav>a{
+.mainNav>a{
     text-decoration: none;
 }
 
-.mainHeader>nav>a:hover{
+.mainNav>a:hover{
     color: var(--main-light-blue);
 }
 
-.mainHeader>nav>button{
+.mainNav>button{
     padding: 10px 20px;
 
     cursor: pointer;
@@ -39,23 +37,23 @@
     background-color: transparent;
 }
 
-.mainHeader>nav>button:hover{
+.mainNav>button:hover{
     color: white;
     background-color: var(--main-dark-blue);
 }
 
-.mainHeader>nav>button:last-child{
+.mainNav>button:last-child{
     color: white;
     background-color: var(--main-dark-blue);
 }
 
-.mainHeader>nav>button:last-child:hover{
+.mainNav>button:last-child:hover{
     background-color: white;
     color: var(--main-dark-blue);
 }
 
 @media screen and (max-width: 860px) {
-    .mainHeader>nav{
+    .mainNav{
         grid-row: 2/3;
         grid-column: span 3;
 
@@ -63,14 +61,15 @@
 
         height: 400px;
 
+        transition: 200ms transform linear;
         transform: translateX(-100%);
     }
 
-    .mainHeader>nav>a {
+    .mainNav>a {
         width: 75%;
     }
 
-    .mainHeader>nav>button{
+    .mainNav>button{
         width: 40%;
         height: 70px;
     }
