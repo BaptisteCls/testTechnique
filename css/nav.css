@@ -8,6 +8,8 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
+    transition: 200ms transform linear;
 }
 
 .mainHeader>nav>a ,.mainHeader>nav>button{
@@ -15,7 +17,7 @@
 
     color: var(--main-dark-blue);
 
-    transition: 200ms all ease-in-out;
+    transition: 200ms color ease-in-out;
 }
 
 .mainHeader>nav>a{
@@ -50,4 +52,26 @@
 .mainHeader>nav>button:last-child:hover{
     background-color: white;
     color: var(--main-dark-blue);
+}
+
+@media screen and (max-width: 860px) {
+    .mainHeader>nav{
+        grid-row: 2/3;
+        grid-column: span 3;
+
+        flex-wrap: wrap;
+
+        height: 400px;
+
+        transform: translateX(-100%);
+    }
+
+    .mainHeader>nav>a {
+        width: 75%;
+    }
+
+    .mainHeader>nav>button{
+        width: 40%;
+        height: 70px;
+    }
 }

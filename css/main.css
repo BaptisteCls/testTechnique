@@ -22,3 +22,9 @@ body{
 main>h1{
     margin-top: 200px;
 }
+
+@media screen and (max-width: 860px){
+    *{
+        font-size: 18px;
+    }
+}

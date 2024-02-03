@@ -6,6 +6,8 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+
+    transition: 200ms transform linear;
 }
 
 .networks a, .networks i{
@@ -21,4 +23,38 @@
 
     padding: 8px;
     padding-right: 14px;
+}
+
+@media screen and (max-width: 860px) {
+    .networks{
+        width: 100%;
+        grid-column: span 3;
+
+        margin: 0;
+        padding: 20px 0;
+
+        background-color: var(--main-light-blue);
+
+        flex-wrap: wrap;
+        justify-content: center;
+
+        transform: translateX(-100%);
+    }
+
+    .networks a{
+        width: 50%;
+
+        margin: 0 20%;
+        padding: 20px 5%;
+
+        border-right: none;
+        border-bottom: 2px solid var(--main-dark-blue);
+
+    }
+
+    .networks i{
+        width: 10%;
+
+        padding: 20px 0;
+    }
 }
