@@ -1,0 +1,24 @@
+.networks{
+    width: clamp(200px,20vw,300px);
+
+    margin: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.networks a, .networks i{
+    cursor: pointer;
+
+    color: var(--main-dark-blue);
+}
+
+.networks a{
+    text-decoration: none;
+
+    border-right: 2px solid var(--main-dark-blue);
+
+    padding: 8px;
+    padding-right: 14px;
+}

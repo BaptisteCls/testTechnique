@@ -1,0 +1,14 @@
+.mainHeader{
+    background-color: var(--main-light-blue);
+
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainHeader>img{
+    margin-left: 15px;
+}
